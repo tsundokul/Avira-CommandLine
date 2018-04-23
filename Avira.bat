@@ -20,3 +20,17 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 ::---------------------------------------------------------
+
+::-----------------------FIRST RUN-------------------------
+if not exist *.key (
+    COLOR 0c
+    echo You need a Avira license - Put .key file in "%~dp0" 
+    pause > nul
+    exit
+)
+
+if exist "scancl.exe" (
+   if exist "fusebundle.exe" (
+       goto menu
+   )
+)

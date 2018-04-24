@@ -45,3 +45,17 @@ rmdir /s /q avira_fusebundlegen-win32-en
 goto update
 ::---------------------------------------------------------
 
+:menu
+cls
+Mode con cols=60 lines=17  | MORE
+Echo: [1] Scan                
+Echo: [2] Update Avira   
+Echo: [3] Cofing Scan 
+Echo: [4] Github  | MORE
+Set /P optm=^>^> 
+If "%optm%"=="1" (Goto :scanmenu)
+If "%optm%"=="2" (Goto :update)
+If "%optm%"=="3" (start notepad "scancl.conf")
+If "%optm%"=="4" (start "" https://github.com/SegoCode?tab=repositories)
+goto menu
+

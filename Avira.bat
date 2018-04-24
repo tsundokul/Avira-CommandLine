@@ -34,3 +34,14 @@ if exist "scancl.exe" (
        goto menu
    )
 )
+powershell -Command "Invoke-WebRequest http://professional.avira-update.com/package/scancl/win32/en/scancl-win32.zip -OutFile scancl-win32.zip"
+powershell -Command "Invoke-WebRequest http://install.avira-update.com/package/fusebundlegen/win32/en/avira_fusebundlegen-win32-en.zip -OutFile avira_fusebundlegen-win32-en.zip"
+powershell -Command "expand-archive -path 'avira_fusebundlegen-win32-en.zip'"
+powershell -Command "expand-archive -path 'scancl-win32.zip'"
+xcopy /Q /Y "scancl-win32\scancl-1.9.161.2" "%~dp0"
+xcopy /Q /Y "avira_fusebundlegen-win32-en" "%~dp0"
+rmdir /s /q scancl-win32
+rmdir /s /q avira_fusebundlegen-win32-en
+goto update
+::---------------------------------------------------------
+

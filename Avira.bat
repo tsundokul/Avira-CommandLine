@@ -59,3 +59,32 @@ If "%optm%"=="3" (start notepad "scancl.conf")
 If "%optm%"=="4" (start "" https://github.com/SegoCode?tab=repositories)
 goto menu
 
+
+:update
+cls
+Mode con cols=90 lines=10
+del *.zip
+del *.vdf
+del *.gz
+del *.crt
+del *.yml
+del *.idx
+del *.rdf
+del *.dat
+for %%i in (*.dll) do if not "%%i"=="msvcr90.dll" del "%%i"
+cls
+Echo:
+echo     Updating Avira . . . 
+Echo: 
+fusebundle.exe
+powershell -Command "expand-archive -path 'install\vdf_fusebundle.zip'" 
+xcopy /q /y "vdf_fusebundle" "%~dp0" 
+rmdir /s /q install 
+rmdir /s /q temp 
+rmdir /s /q vdf_fusebundle 
+cls
+echo m=msgbox("Avira successfully updated." ,0, "Updater") >> msgbox.vbs
+msgbox.vbs
+del *.vbs
+goto menu
+

@@ -88,3 +88,14 @@ msgbox.vbs
 del *.vbs
 goto menu
 
+:scanmenu
+cls
+Mode con cols=90 lines=31  | MORE
+Echo: [1] Fast Scan  
+Echo: [2] Full Drive Scan (All Drives)
+Echo: [3] On demand Scan        
+Echo: [4] Back  | MORE
+
+Set /P optscan=^>^>
+cls
+

@@ -98,4 +98,20 @@ Echo: [4] Back  | MORE
 
 Set /P optscan=^>^>
 cls
+if %optscan%==1 (scancl.exe C: --smartextensions --defaultaction=delete --suspiciousaction=delete --heurlevel=3 --colors)
+if %optscan%==2 (scancl.exe --allboot --allhard --allremote --withtype=all --defaultaction=delete --suspiciousaction=delete --heurlevel=3 --colors --stats)
+if %optscan%==3 (
+    Echo: 
+    Echo     Enter directory to scan: 
+    Echo: 
+    set /p %scandir%= ^>^>
+    cls
+    scancl.exe %scandir% --config=scancl.conf )
+if %optscan%==4 (goto menu)
+
+pause > nul
+goto :scanmenu
+
+
+
 

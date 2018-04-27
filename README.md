@@ -6,7 +6,7 @@
 </h1>
 <h1 align="center"><img src="https://i.imgur.com/GUoMpLi.png"></h1>
 
-
+You do not need to install Avira antivirus for use script
 The Script `requires privileges`, and `Avira.key` file in root directory
 
 <details> 

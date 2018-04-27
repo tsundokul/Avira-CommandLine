@@ -35,7 +35,6 @@ The Script `requires privileges`, and `Avira.key` file in root directory
            1.226 aevdf.dat
          154.264 aevdf.dll
            1.546 auccert.crt
-             512 Avira.key
          204.933 avlode.rdf
            8.752 avreg.yml
            7.586 cacert.crt

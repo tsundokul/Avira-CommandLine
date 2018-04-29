@@ -6,13 +6,11 @@
 </h1>
 <h1 align="center"><img src="https://i.imgur.com/GUoMpLi.png"></h1>
 
-Under normal conditions you need Avira installed to run the command line antivirus. 
-
-But you do not need to install Avira antivirus for use script.                                                                    
-
-The Script `requires privileges`, and `Avira.key` file in root directory.                                                           
-
-Really recommended run in to a empty folder                                                                                       
+Under normal conditions you need Avira installed to run the command line antivirus.<br />
+But you do not need to install Avira antivirus for use script.       
+Really recommended run in to a empty folder.<br />           
+The Script `requires privileges`, and `Avira.key` file in root directory.                                                       
+                                                                             
 
 
 <details> 

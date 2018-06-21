@@ -109,6 +109,7 @@ Echo     Enter directory to scan:
 Echo: 
 set /p scandir=^>^>
 cls
+echo Apply file restrictions scancl.conf
 echo Scanning directory: %scandir%
 scancl.exe %scandir% --config=scancl.conf --colors
 pause > nul

@@ -104,7 +104,7 @@ if %optscan%==3 (
     Echo: 
     Echo     Enter directory to scan: 
     Echo: 
-    set /p %scandir%= ^>^>
+    set /p scandir= ^>^>
     cls
     scancl.exe %scandir% --config=scancl.conf )
 if %optscan%==4 (goto menu)

@@ -1,15 +1,21 @@
-<h1 align="center">
-  <a href="https://www.avira.com/es/free-antivirus-windows"><img src="https://www.avira.com/images/content/press/press-material-v3/Avira_Logo.jpg" width="200"></a>
-  <br>
-  Command Line All in One
-  <br>
-</h1>
-<h1 align="center"><img src="https://i.imgur.com/GUoMpLi.png"></h1>
+<h3 align="center"><img src="https://www.avira.com/images/content/press/press-material-v3/Avira_Logo.jpg" height="80px"></h3>
+<p align="center">Command-line All in One with Updater</p>
+<h3 align="center"><img src="https://i.imgur.com/GUoMpLi.png" height="250px"></h3>
+<p align="center">
+<img src="https://img.shields.io/badge/Windows-Batch-yellow"></a>
+<img src="https://img.shields.io/badge/-%20Made%20with%20❤-blue.svg"></a>
+<img src="https://img.shields.io/badge/Maintained-yes-green.svg"></a>
+<img src="https://img.shields.io/badge/core-Avira-red"></a>
+</p>
 
-Under normal conditions you need Avira installed to run the command line antivirus.<br />
+
+
+
+Under normal conditions you need Avira installed to run the command line antivirus.
 But you do not need to install Avira antivirus for use script.       
 Really recommended run into a empty folder.<br />           
-The Script `requires privileges`, and `Avira.key` file in root directory.                                                       
+The Script `requires privileges`, and `Avira.key` file in root directory.          
+                                             
                                                                              
 
 
@@ -96,5 +102,7 @@ The Script `requires privileges`, and `Avira.key` file in root directory.
 
 <img src="https://i.imgur.com/7vLzbGP.gif">
 </details>
+
+
 
 

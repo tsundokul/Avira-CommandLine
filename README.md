@@ -4,7 +4,6 @@
 <p align="center">
 <img src="https://img.shields.io/badge/Windows-Batch-yellow"></a>
 <img src="https://img.shields.io/badge/-%20Made%20with%20❤-blue.svg"></a>
-<img src="https://img.shields.io/badge/Maintained-yes-green.svg"></a>
 <img src="https://img.shields.io/badge/core-Avira-red"></a>
 </p>
 
